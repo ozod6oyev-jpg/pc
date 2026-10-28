@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="32dp">
+
+        <!-- Sarlavha -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/bg_logo"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="@string/app_name"
+                    android:textColor="@color/text"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_subtitle"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 1. Shizuku -->
+        <LinearLayout style="@style/Card">
+
+            <TextView
+                style="@style/Section"
+                android:text="@string/section_shizuku" />
+
+            <TextView
+                android:id="@+id/shizukuState"
+                style="@style/Body" />
+
+            <TextView
+                android:id="@+id/shizukuInfo"
+                style="@style/Hint"
+                android:fontFamily="monospace" />
+
+            <Button
+                android:id="@+id/btnPermission"
+                style="@style/Button.Secondary"
+                android:text="@string/btn_request_permission" />
+        </LinearLayout>
+
+        <!-- 2. O'yin zonasi -->
+        <LinearLayout style="@style/Card">
+
+            <TextView
+                style="@style/Section"
+                android:text="@string/section_zone" />
+
+            <TextView
+                style="@style/Hint"
+                android:layout_marginTop="0dp"
+                android:text="@string/zone_hint" />
+
+            <TextView
+                android:id="@+id/zoneInfo"
+                style="@style/Body"
+                android:layout_marginTop="10dp"
+                android:fontFamily="monospace"
+                android:text="@string/zone_none"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/zonePreview"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_preview"
+                android:contentDescription="@string/section_zone"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnScanZone"
+                style="@style/Button.Primary"
+                android:text="@string/btn_scan_zone" />
+        </LinearLayout>
+
+        <!-- 3. Tegish sinovi -->
+        <LinearLayout style="@style/Card">
+
+            <TextView
+                style="@style/Section"
+                android:text="@string/section_test" />
+
+            <TextView
+                android:id="@+id/screenInfo"
+                style="@style/Body"
+                android:fontFamily="monospace"
+                android:textSize="13sp" />
+
+            <TextView
+                style="@style/Hint"
+                android:text="@string/test_hint" />
+
+            <TextView
+                style="@style/Label"
+                android:text="@string/label_start" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/inputX"
+                    style="@style/NumberField"
+                    android:hint="x" />
+
+                <EditText
+                    android:id="@+id/inputY"
+                    style="@style/NumberField"
+                    android:layout_marginEnd="0dp"
+                    android:hint="y" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Label"
+                android:text="@string/label_end" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/inputX2"
+                    style="@style/NumberField"
+                    android:hint="x2" />
+
+                <EditText
+                    android:id="@+id/inputY2"
+                    style="@style/NumberField"
+                    android:layout_marginEnd="0dp"
+                    android:hint="y2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Label"
+                        android:text="@string/label_delay" />
+
+                    <EditText
+                        android:id="@+id/inputDelay"
+                        style="@style/NumberFieldFull" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Label"
+                        android:text="@string/label_duration" />
+
+                    <EditText
+                        android:id="@+id/inputDuration"
+                        style="@style/NumberFieldFull" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Label"
+                        android:text="@string/label_hold" />
+
+                    <EditText
+                        android:id="@+id/inputHold"
+                        style="@style/NumberFieldFull" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSwipeInject"
+                style="@style/Button.Primary"
+                android:layout_marginTop="16dp"
+                android:text="@string/btn_swipe_inject" />
+
+            <Button
+                android:id="@+id/btnTapInject"
+                style="@style/Button.Secondary"
+                android:text="@string/btn_tap_inject" />
+
+            <Button
+                android:id="@+id/btnTapShell"
+                style="@style/Button.Secondary"
+                android:text="@string/btn_tap_shell" />
+        </LinearLayout>
+
+        <!-- Jurnal -->
+        <LinearLayout style="@style/Card">
+
+            <TextView
+                style="@style/Section"
+                android:text="@string/section_log" />
+
+            <TextView
+                android:id="@+id/log"
+                style="@style/Body"
+                android:fontFamily="monospace"
+                android:textIsSelectable="true"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

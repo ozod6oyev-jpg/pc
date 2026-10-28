@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoAim</string>
+    <string name="app_subtitle">Sharchani slotga — avtomatik</string>
+
+    <string name="section_shizuku">Shizuku</string>
+    <string name="btn_request_permission">Ruxsat so\'rash / ulash</string>
+    <string name="state_not_running">❌ Shizuku ishlamayapti — Shizuku ilovasini oching va ishga tushiring</string>
+    <string name="state_too_old">❌ Shizuku juda eski (v11+ kerak) — yangilang</string>
+    <string name="state_no_permission">⚠️ Ruxsat berilmagan — pastdagi tugmani bosing</string>
+    <string name="state_connecting">⏳ Xizmatga ulanmoqda…</string>
+    <string name="state_ready">✅ Tayyor</string>
+
+    <string name="section_zone">O\'yin zonasi</string>
+    <string name="zone_hint">Tugmani bosing — ekranda qalqib turuvchi panel ochiladi. O\'yinni oching, so\'ng paneldagi «Skanerlash» ni bosing: ilova o\'yin zonasini (ramka, sharcha, quti) o\'zi topadi.</string>
+    <string name="overlay_permission_needed">Panel uchun «Boshqa ilovalar ustidan ko\'rsatish» ruxsatini AutoAim ga bering</string>
+
+    <string name="panel_title">O\'yin zonasi</string>
+    <string name="panel_close">Yopish</string>
+    <string name="panel_waiting">O\'yinni oching, so\'ng «Skanerlash» ni bosing.</string>
+    <string name="panel_scanning">⏳ Skanerlanmoqda…</string>
+    <string name="panel_scan">Skanerlash</string>
+    <string name="panel_rescan">Qayta skanerlash</string>
+    <string name="panel_open_app">Ilovaga qaytish</string>
+    <string name="panel_save">Skrinshotni saqlash</string>
+    <string name="panel_aim">🎯 Mo\'ljal olish (otmasdan)</string>
+    <string name="aim_started">🎯 Mo\'ljal olinmoqda — ~10 s ekranga tegmang</string>
+    <string name="panel_play">🔥 O\'ynash (haqiqiy otish)</string>
+    <string name="panel_live_on">📡 Jonli ko\'rishni yoqish</string>
+    <string name="panel_live_off">📡 Jonli ko\'rish: YONIQ — o\'chirish</string>
+    <string name="panel_play_confirm">⚠️ Yurak sarflanadi — tasdiqlash uchun yana bosing</string>
+    <string name="play_stop">⏹ To\'xtatish</string>
+    <string name="play_stopping">⏳ To\'xtatilmoqda…</string>
+    <string name="save_done">Saqlandi: %1$s</string>
+    <string name="save_failed">Saqlab bo\'lmadi: %1$s</string>
+    <string name="save_cancelled">Saqlash bekor qilindi</string>
+    <string name="panel_no_service">❌ Shizuku xizmati ulanmagan — ilovada ruxsat bering.</string>
+    <string name="zone_none">Zona hali skanerlanmagan</string>
+    <string name="btn_scan_zone">O\'yin zonasini skanerlash</string>
+
+    <string name="section_test">Tegish sinovi</string>
+    <string name="test_hint">Sinov tugmasini bosgach, kechikish tugaguncha o\'yinni oching. Zona topilgan bo\'lsa, koordinatalar sharchaga qarab avtomatik to\'ldiriladi. Koordinatani bilish uchun: Dasturchi sozlamalari → \"Ko\'rsatkich joylashuvi\".</string>
+    <string name="label_start">Boshlanish (x, y)</string>
+    <string name="label_end">Surish oxiri (x2, y2)</string>
+    <string name="label_delay">Kechikish, s</string>
+    <string name="label_duration">Surish, ms</string>
+    <string name="label_hold">Ushlab turish, ms</string>
+    <string name="btn_tap_shell">Tegish: input tap (B)</string>
+    <string name="btn_tap_inject">Tegish: inject (A)</string>
+    <string name="btn_swipe_inject">Bosib surish → qo\'yib yuborish (A)</string>
+
+    <string name="section_log">Jurnal</string>
+</resources>
